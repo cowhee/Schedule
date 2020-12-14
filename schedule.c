@@ -86,8 +86,8 @@ void* sched_genSchedInfo(char* name, char* place, int type, int month, int day)
 {
 	schedInfo_t* schedPtr;
 	
-	//error handler
-
+    if(schedPtr == NULL) {	//error handler
+        printf("[ERROR] failed to print the s")
 	//allocate memory and set the member variables
 	
 	

@@ -22,7 +22,6 @@ int main(int argc, char *argv[]) {
 	void *schedInfo;
 	int option;
 	int cnt;
-	int num ; // 메뉴에서 선택할 option 고르는 숫자 변수 선언  
 	
 	//1. FILE pointer open & error handling
 	fp = fopen("schedule.c", "r"); //schedule.c 함수 읽기  
@@ -57,15 +56,15 @@ int main(int argc, char *argv[]) {
 	while(exit_flag == 0) 
 	{
 		//3. menu printing
-		printf("1. print all the schedules");
-		printf("2. search for schedules in the month");
-		printf("3. search for schedules in the place");
-		printf("4. search for specific type schedule");
-		printf("5. exit");
+		printf("1. print all the schedules"); //1. print all the schedules 출력  
+		printf("2. search for schedules in the month"); //2.  search for schedules in the month 출력  
+		printf("3. search for schedules in the place"); // 3. search for schedules in the place 출력  
+		printf("4. search for specific type schedule"); //4. search for specific type schedule 출력  
+		printf("5. exit"); // 5. exit 출력  
 		
 		//4. get option from keyboard
-		scanf("%d", &num );
-		printf("select an option: %d\n", num );
+		scanf("%d", &option ); // 메뉴의 옵션번호 선택할 숫자 입력받기  
+		printf("select an option: %d\n", option); //select an option 출력  
 		
 		
 		switch(option)
